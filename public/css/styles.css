@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+p{
+    font-size: 12px;
+}
+i{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+header{
+    background-color: #EAC926;
+    padding:15px;
+    color: #000;
+}
+header .logo{
+    margin-bottom: 10px;
+}
+header .compra{
+    text-align: center;
+    margin-bottom: 10px;
+}
+header nav ul{
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: #000;
+}
+header nav ul li a i{
+    font-size: 14px;
+}
+header button{
+    height: 19px;
+}
+header button i{
+    font-size: 15px;
+}
+header .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+header .menu .burguer-menu{
+    background-color:#1259c3;
+    height: 27px;
+    width: 33px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #03264C;
+    padding-top: 5px;
+}
+header .menu i{
+    color: #ffffff;
+    font-size: 22px;
+}
+h2.title{
+    margin-top: 55px;
+}
+main section div{
+    margin-bottom: 30px;
+}
+.precio{
+    font-size: 18px;
+}
+.descuento, 
+.descripcion{
+    font-size: 16px;
+}
+main{
+    padding: 0 15px;
+}
+footer section{
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 50px;
+}
+footer section i{
+    color:#1259c3;
+}
+footer h5{
+    color: #666666;
+    font-size: 20px;
+}
+footer p{
+    font-size: 13px;
+}
+footer .copy{
+    text-align: left;
+    padding: 0 0 30px 20px;
+}
