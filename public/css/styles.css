@@ -4,6 +4,7 @@
 }
 body{
     font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
 }
 h1,h2,h3,h4,h5,h6{
     font-size: 24px;
@@ -28,6 +29,9 @@ header .compra{
     text-align: center;
     margin-bottom: 10px;
 }
+header nav{
+    display: none;
+}
 header nav ul{
     list-style-type: none;
     margin-bottom: 15px;
@@ -49,7 +53,6 @@ header .menu{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
 }
 header .menu .burguer-menu{
     background-color:#1259c3;
@@ -66,9 +69,20 @@ header .menu i{
 }
 h2.title{
     margin-top: 55px;
+    color: #666;
+    margin-bottom: 20px;
 }
-main section div{
-    margin-bottom: 30px;
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+main section article{
+    margin-bottom: 10px;
+    background-color: #ffffff;
+}
+main section article div{
+    padding: 15px;
+    border-top: 1px solid #ebebeb;
 }
 .precio{
     font-size: 18px;
@@ -76,6 +90,25 @@ main section div{
 .descuento, 
 .descripcion{
     font-size: 16px;
+}
+.descripcion{
+    color: #666666;
+    display: none;
+}
+main section article div i{
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    border-radius: 50%;
+    font-size: 18px;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+.descuento{
+    color: #39b54a;
+    margin-bottom: 20px;
 }
 main{
     padding: 0 15px;
@@ -98,4 +131,33 @@ footer p{
 footer .copy{
     text-align: left;
     padding: 0 0 30px 20px;
+}
+
+/* Navegacion en tablets */
+@media (min-width: 361px) {
+    .descripcion{
+        display: block;
+    }
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    header nav{
+        display: block;
+    }
+    header .menu{
+        display: none;
+    }
+}
+
+/* Navegacion en desktop */
+@media (min-width: 769px) {
+    .descripcion{
+        display: block;
+    }
+    header nav{
+        display: block;
+    }
+    header .menu{
+        display: none;
+    }
 }
