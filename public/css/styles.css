@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -22,8 +23,39 @@ header{
     padding:15px;
     color: #000;
 }
+header .first{
+    display: flex;
+}
 header .logo{
     margin-bottom: 10px;
+    width: 50%;
+}
+header .buscador{
+    width: 50%;
+    margin-left: 10px;
+}
+header .first .buscador form{
+    position: relative;
+}
+header .first .buscador input{
+    height: 35px;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+header .first .buscador button {
+    background-color: #ffffff;
+    border: 0;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0 0px 0 5px;
+}
+header .first .buscador button i{
+    color: #666;
 }
 header .compra{
     text-align: center;
@@ -47,7 +79,7 @@ header button{
     height: 19px;
 }
 header button i{
-    font-size: 15px;
+    font-size: 13px;
 }
 header .menu{
     display: flex;
@@ -56,7 +88,7 @@ header .menu{
 }
 header .menu .burguer-menu{
     background-color:#1259c3;
-    height: 27px;
+    height: 33px;
     width: 33px;
     text-align: center;
     border-radius: 5px;
@@ -65,7 +97,7 @@ header .menu .burguer-menu{
 }
 header .menu i{
     color: #ffffff;
-    font-size: 22px;
+    font-size: 20px;
 }
 h2.title{
     margin-top: 55px;
@@ -95,16 +127,29 @@ main section article div{
     color: #666666;
     display: none;
 }
+main section{
+    display: flex;
+    flex-wrap: wrap;
+}
+main section article{
+    width: 100%;
+}
+main section article div{
+    position: relative;
+}
 main section article div i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
     color: #39b54a;
     border: 1px solid #39b54a;
+    background-color: #ffffff;
     border-radius: 50%;
-    font-size: 18px;
-    width: 40px;
-    height: 30px;
-    text-align: center;
-    padding-top: 10px;
-    margin-bottom: 0;
+    position: absolute;
+    right: 20px;
+    top: -15px;
 }
 .descuento{
     color: #39b54a;
@@ -147,6 +192,13 @@ footer .copy{
     header .menu{
         display: none;
     }
+    main section {
+        margin: 0 -5px;
+    }
+    main section article {
+        width: 46%;
+        margin: 5px;
+    }
 }
 
 /* Navegacion en desktop */
@@ -159,5 +211,9 @@ footer .copy{
     }
     header .menu{
         display: none;
+    }
+    main section article {
+        width: 30%;
+        margin: 5px;
     }
 }
