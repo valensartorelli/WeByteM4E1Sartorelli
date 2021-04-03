@@ -84,94 +84,67 @@
 				</div>
 			</div>
 		</header>
-		<img src="/images/img-home-banner.jpg" alt="Bienvenidos a Mercado Liebre" width="100%">
-
-		<main>
-			<h2 class="title">Basado en tu &uacute;ltima visita</h2>
+		
+		<main class="register">
 			<section>
-				<article>
-					<img src="/images/img-cafetera-moulinex.jpg" width="100%">
-					<div>
-						<i class="fas fa-truck"></i>
-						<p class="precio">$6.770</p>
-						<p class="descuento">40% off</p>
-						<h4 class="descripcion">Cafetera Moulinex</h4>
+                <form action="" method="POST">
+                    <div class="flex-c">
+						<div>
+							<label for="name">Nombre y apellido: </label> 
+							<input type="text" name="nombre_apellido" id="name" minlength="6"> 
+						</div>
+						<div>
+							<label for="user">Nombre de usuario: </label> 
+							<input type="text" name="usuario" id="user" minlength="3">
+						</div>
 					</div>
-				</article>
-
-				<article>
-					<img src="/images/img-macbook-pro-2019.jpg" width="100%">
-					<div>
-						<i class="fas fa-truck"></i>
-						<p class="precio">$230.000</p>
-						<p class="descuento">20% off</p>
-						<h4 class="descripcion">MacBook Pro 2019</h4>
+					<div class="flex-c">
+						<div>
+							<label for="bdate">Fecha de nacimiento: </label>
+							<input type="date" name="nacimiento" id="bday">
+						</div>
+						<div>
+							<label for="address">Domicilio: </label> 
+							<input type="text" name="domicilio" id="address">
+						</div>
 					</div>
-				</article>
-
-				<article>
-					<img src="/images/img-samsung-galaxy-s10.jpg" width="100%">
-					<div>
-						<i class="fas fa-truck"></i>
-						<p class="precio">$70.500</p>
-						<p class="descuento">10% off</p>
-						<h4 class="descripcion">Samsung Galaxy S10</h4>
+                    <div>Perfil del usuario: </div>
+                    
+                    <input type="radio" name="comprar_vender" value="comprar" id="buy">
+                    <label for="buy" class="option">Comprador</label> <br>
+                    <input type="radio" name="comprar_vender" value="vender" id="sell"> 
+                    <label for="sell" class="option">Vendedor</label>
+                   
+                    <div class="title-cat">Categor&iacute;as de inter&eacute;s: </div> 
+                    <input type="checkbox" name="interes" value="electro" id="electro"> 
+                    <label for="electro" class="option">Electro</label> <br>
+                    <input type="checkbox" name="interes" value="moda" id="moda"> 
+                    <label for="moda" class="option">Moda</label><br>
+                    <input type="checkbox" name="interes" value="hogar" id="hogar"> 
+                    <label for="hogar" class="option">Hogar</label><br>
+                    <input type="checkbox" name="interes" value="jugueteria" id="jugueteria"> 
+                    <label for="jugueteria" class="option">Jugueter&iacute;a</label> <br>
+                    <input type="checkbox" name="interes" value="vida-sana" id="vida-sana">
+                    <label for="vida-sana" class="option">Vida Sana</label>
+                    
+                    <label for="picture" class="m-t-25 m-b-15">Foto de usuario: </label>
+                    <input type="file" name="foto" id="picture" accept=".jpg">
+                    <div class="flex-c">
+						<div>
+							<label for="pass">Contrase&ntilde;a: </label> 
+							<input type="password" name="contrasenia" id="pass">
+                   		</div>
+						<div>
+							<label for="repeat">Confirmar contrase&ntilde;a: </label> 
+							<input type="password" name="repetir-contrasenia" id="repeat">
+						</div>
 					</div>
-				</article>
-
-				<article>
-					<img src="/images/img-tv-samsung-smart.jpg" width="100%">
-					<div>
-						<i class="fas fa-truck"></i>
-						<p class="precio">$23.300</p>
-						<p class="descuento">5% off</p>
-						<h4 class="descripcion">SmartTv Samsung 43"</h4>
+					<div class="botones">
+						<button type="reset">Borrar todo</button>
+						<button>Enviar</button>
 					</div>
-				</article>
-			</section>
-
-			<h2 class="title">Ofertas</h2>
-			<section>
-				<article>
-					<img src="/images/img-cafetera-moulinex.jpg" width="100%">
-					<div>
-						<i class="fas fa-truck"></i>
-						<p class="precio">$6.770</p>
-						<p class="descuento">40% off</p>
-						<h4 class="descripcion">Cafetera Moulinex</h4>
-					</div>
-				</article>
-
-				<article>
-					<img src="/images/img-macbook-pro-2019.jpg" width="100%">
-					<div>
-						<i class="fas fa-truck"></i>
-						<p class="precio">$230.000</p>
-						<p class="descuento">20% off</p>
-						<h4 class="descripcion">MacBook Pro 2019</h4>
-					</div>
-				</article>
-
-				<article>
-					<img src="/images/img-samsung-galaxy-s10.jpg" width="100%">
-					<div>
-						<i class="fas fa-truck"></i>
-						<p class="precio">$70.500</p>
-						<p class="descuento">10% off</p>
-						<h4 class="descripcion">Samsung Galaxy S10</h4>
-					</div>
-				</article>
-
-				<article>
-					<img src="/images/img-tv-samsung-smart.jpg" width="100%">
-					<div>
-						<i class="fas fa-truck"></i>
-						<p class="precio">$23.300</p>
-						<p class="descuento">5% off</p>
-						<h4 class="descripcion">SmartTv Samsung 43"</h4>
-					</div>
-				</article>
-			</section>
+                </form>
+            </section>
 		</main>
 
 		<footer>
